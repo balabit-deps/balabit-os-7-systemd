@@ -28,6 +28,8 @@
 #include "test-helper.h"
 #include "tests.h"
 
+#include "detect_docker.h"
+
 int main(int argc, char *argv[]) {
         _cleanup_(rm_rf_physical_and_freep) char *runtime_dir = NULL;
         _cleanup_(sd_bus_error_free) sd_bus_error err = SD_BUS_ERROR_NULL;
@@ -37,6 +39,8 @@ int main(int argc, char *argv[]) {
         FDSet *fdset = NULL;
         Job *j;
         int r;
+
+	EXIT_TEST_SKIP_IF_DOCKER();
 
         r = enter_cgroup_subroot();
         if (r == -ENOMEDIUM) {

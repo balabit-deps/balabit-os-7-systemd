@@ -26,6 +26,8 @@
 #include "test-helper.h"
 #include "tests.h"
 
+#include "detect_docker.h"
+
 int main(int argc, char *argv[]) {
         _cleanup_(rm_rf_physical_and_freep) char *runtime_dir = NULL;
         Manager *m = NULL;
@@ -34,6 +36,8 @@ int main(int argc, char *argv[]) {
         FILE *serial = NULL;
         FDSet *fdset = NULL;
         int r;
+
+	EXIT_TEST_SKIP_IF_DOCKER();
 
         r = enter_cgroup_subroot();
         if (r == -ENOMEDIUM) {

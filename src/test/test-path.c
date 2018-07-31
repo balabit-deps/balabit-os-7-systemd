@@ -35,6 +35,8 @@
 #include "unit.h"
 #include "util.h"
 
+#include "detect_docker.h"
+
 typedef void (*test_function_t)(Manager *m);
 
 static int setup_test(Manager **m) {
@@ -261,6 +263,8 @@ int main(int argc, char *argv[]) {
                 test_path_makedirectory_directorymode,
                 NULL,
         };
+
+	EXIT_TEST_SKIP_IF_DOCKER();
 
         _cleanup_(rm_rf_physical_and_freep) char *runtime_dir = NULL;
         const test_function_t *test = NULL;

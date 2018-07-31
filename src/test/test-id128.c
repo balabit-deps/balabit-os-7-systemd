@@ -31,6 +31,8 @@
 #include "string-util.h"
 #include "util.h"
 
+#include "detect_docker.h"
+
 #define ID128_WALDI SD_ID128_MAKE(01, 02, 03, 04, 05, 06, 07, 08, 09, 0a, 0b, 0c, 0d, 0e, 0f, 10)
 #define STR_WALDI "0102030405060708090a0b0c0d0e0f10"
 #define UUID_WALDI "01020304-0506-0708-090a-0b0c0d0e0f10"
@@ -41,6 +43,8 @@ int main(int argc, char *argv[]) {
         _cleanup_free_ char *b = NULL;
         _cleanup_close_ int fd = -1;
         int r;
+
+	EXIT_TEST_SKIP_IF_DOCKER();
 
         assert_se(sd_id128_randomize(&id) == 0);
         printf("random: %s\n", sd_id128_to_string(id, t));

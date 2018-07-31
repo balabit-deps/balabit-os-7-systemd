@@ -26,12 +26,16 @@
 #include "string-util.h"
 #include "khash.h"
 
+#include "detect_docker.h"
+
 int main(int argc, char *argv[]) {
         _cleanup_(khash_unrefp) khash *h = NULL, *copy = NULL;
         _cleanup_free_ char *s = NULL;
         int r;
 
         log_set_max_level(LOG_DEBUG);
+
+	EXIT_TEST_SKIP_IF_DOCKER();
 
         assert_se(khash_new(&h, NULL) == -EINVAL);
         assert_se(khash_new(&h, "") == -EINVAL);
