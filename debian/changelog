@@ -1,3 +1,9 @@
+systemd (237-3ubuntu10.6bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 17 Nov 2018 04:26:48 +0100
+
 systemd (237-3ubuntu10.6) bionic-security; urgency=medium
 
   * SECURITY UPDATE: reexec state injection
