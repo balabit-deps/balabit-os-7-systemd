@@ -1,3 +1,9 @@
+systemd (237-3ubuntu10.11bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 12 Jan 2019 04:26:17 +0100
+
 systemd (237-3ubuntu10.11) bionic-security; urgency=medium
 
   * SECURITY UPDATE: memory corruption in journald via attacker controlled alloca
