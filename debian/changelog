@@ -1,3 +1,9 @@
+systemd (237-3ubuntu10.12bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 09 Feb 2019 04:26:01 +0100
+
 systemd (237-3ubuntu10.12) bionic; urgency=medium
 
   * d/p/resolve-enable-EDNS0-towards-the-127.0.0.53-stub-res.patch
