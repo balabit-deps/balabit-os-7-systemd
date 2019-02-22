@@ -1,3 +1,9 @@
+systemd (237-3ubuntu10.13bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Fri, 22 Feb 2019 10:34:01 +0100
+
 systemd (237-3ubuntu10.13) bionic-security; urgency=medium
 
   * SECURITY UPDATE: denial of service via crafted dbus message
