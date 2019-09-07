@@ -1,3 +1,31 @@
+systemd (237-3ubuntu10.28) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: Unprivileged users are granted access to privileged
+    systemd-resolved D-Bus methods
+    - d/p/0001-shared-but-util-drop-trusted-annotation-from-bus_ope.patch:
+      drop trusted annotation from bus_open_system_watch_bind()
+    - CVE-2019-15718
+
+ -- Chris Coulson <chris.coulson@canonical.com>  Thu, 29 Aug 2019 23:30:33 +0100
+
+systemd (237-3ubuntu10.26) bionic; urgency=medium
+
+  [ You-Sheng Yang ]
+  * d/p/d/Revert-udev-network-device-renaming-immediately-give.patch:
+    - udev: drop Revert-udev-network-device-renaming-immediately-give.patch
+      The removing patch was for the already deprecated
+      "75-persistent-net-generator.rules" based interface renaming mechanism,
+      and it's causing unnecessary problem when a system happends to NICs with
+      same MAC address, e.g. Dell's MAC address pass-thru. (LP: #1837700)
+
+  [ Shih-Yuan Lee (FourDollars) ]
+  * d/p/hwdb-revert-airplane-mode-keys-handling-on-Dell.patch:
+    - hwdb: revert airplane mode keys handling on Dell
+      That reverts some commits those created double key events issues on some
+      Dell laptops. (LP: #1740894)
+
+ -- Shih-Yuan Lee (FourDollars) <sylee@canonical.com>  Wed, 07 Aug 2019 17:56:02 +0800
+
 systemd (237-3ubuntu10.25bb1) bionic; urgency=medium
 
   * Balabit patched version
