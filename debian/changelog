@@ -1,3 +1,9 @@
+systemd (237-3ubuntu10.33bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 30 Nov 2019 04:25:24 +0100
+
 systemd (237-3ubuntu10.33) bionic; urgency=medium
 
   * d/p/lp1852754/0001-network-do-not-re-set-MTU-when-current-and-requested.patch,
