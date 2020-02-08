@@ -1,3 +1,9 @@
+systemd (237-3ubuntu10.38bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 08 Feb 2020 04:26:09 +0100
+
 systemd (237-3ubuntu10.38) bionic-security; urgency=medium
 
   * SECURITY UPDATE: local privilege escalation via DynamicUser
