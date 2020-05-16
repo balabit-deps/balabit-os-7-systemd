@@ -1,3 +1,9 @@
+systemd (237-3ubuntu10.40bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 16 May 2020 04:25:23 +0200
+
 systemd (237-3ubuntu10.40) bionic; urgency=medium
 
   * d/t/logind: skip if nonexistent /sys/power/state (LP: #1862657)
