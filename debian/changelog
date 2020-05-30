@@ -1,3 +1,9 @@
+systemd (237-3ubuntu10.41bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 30 May 2020 04:25:14 +0200
+
 systemd (237-3ubuntu10.41) bionic; urgency=medium
 
   [ Dan Streetman ]
