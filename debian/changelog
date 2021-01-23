@@ -1,3 +1,9 @@
+systemd (237-3ubuntu10.44bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 23 Jan 2021 04:31:20 +0100
+
 systemd (237-3ubuntu10.44) bionic; urgency=medium
 
   * d/extra/dhclient-enter-resolved-hook:
